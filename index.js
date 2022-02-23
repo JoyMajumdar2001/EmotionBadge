@@ -71,6 +71,4 @@ app.get("/emotion/:gitId/:emotion", function (req, res) {
 });
 
 
-app.set("view engine", "ejs");
-
 app.listen(3000, () => console.log("Server running..."));
