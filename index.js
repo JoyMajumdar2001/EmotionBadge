@@ -40,29 +40,29 @@ app.get("/emotion/:gitId/:emotion", function (req, res) {
     linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Smile&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'anger'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Anger&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Anger&query=%24.faceAttributes.emotion.anger&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'contempt'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Contempt&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Contempt&query=%24.faceAttributes.emotion.contempt&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'disgust'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Disgust&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Disgust&query=%24.faceAttributes.emotion.disgust&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
 
   if(req.params.emotion == 'fear'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Fear&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Fear&query=%24.faceAttributes.emotion.fear&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'happiness'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Happiness&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Happiness&query=%24.faceAttributes.emotion.happiness&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'neutral'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Neutral&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Neutral&query=%24.faceAttributes.emotion.neutral&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'sadness'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Sadness&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Sadness&query=%24.faceAttributes.emotion.sadness&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
   if(req.params.emotion == 'surprise'){
-    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Surprise&query=%24.faceAttributes.smile&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
+    linkRedir = "https://img.shields.io/badge/dynamic/json?color=orange&label=Surprise&query=%24.faceAttributes.emotion.surprise&url=https%3A%2F%2Femotionbadge.onrender.com%2Femotion%2F" + req.params.gitId
   }
 
   res.redirect(linkRedir);
