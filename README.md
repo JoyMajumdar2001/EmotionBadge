@@ -20,9 +20,9 @@ Avilable `emotion` types are
 
 ## Example
 
-- ![Smile](https://emotionbadge.onrender.com/emotion/JoyMajumdar2001/smile)
-- ![Fear](https://emotionbadge.onrender.com/emotion/JoyMajumdar2001/fear)
-- ![Neutral](https://emotionbadge.onrender.com/emotion/JoyMajumdar2001/neutral)
+- ![Smile](https://emotionbadge.onrender.com/emotion/JeroenMols/smile)
+- ![Fear](https://emotionbadge.onrender.com/emotion/JeroenMols/fear)
+- ![Neutral](https://emotionbadge.onrender.com/emotion/JeroenMols/neutral)
 
 ## Scoring system
 In this project we are using `Azure Face Api` to detect emotions from the profile picture. It scores the emotion between **0** to **1** upon the Face Api model confidence. It is based on AI so the score may not be satisfatory everytime to users.
