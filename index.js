@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config()
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const axios = require("axios").default;
@@ -6,6 +7,10 @@ const axios = require("axios").default;
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+
+app.get("/",function(req,res){
+  res.send("Hello World")
+})
 
 app.get("/emotion/:gitId/", function (req, res) {
   axios.get('https://api.github.com/users/' + req.params.gitId)
@@ -71,4 +76,4 @@ app.get("/emotion/:gitId/:emotion", function (req, res) {
 });
 
 
-app.listen(3000, () => console.log("Server running..."));
+app.listen(process.env.PORT||3000, () => console.log("Server running..."));
