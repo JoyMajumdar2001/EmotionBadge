@@ -32,7 +32,7 @@ app.get("/em/:gitId/auto", function (req, res) {
       };
       axios(config).then(function (response) {
         var resJson = response.data;
-        if (response == null || response.length == 0) {
+        if (resJson == null || resJson.length == 0) {
           res.send({ emotion: "No face", value: 0 });
         } else {
           if (resJson[0].faceAttributes.smile >= 0.5) {

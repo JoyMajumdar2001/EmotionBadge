@@ -8,6 +8,8 @@ It is too easy to use and insert in your README.md
 https://emotionbadge.onrender.com/emotion/<Your github username>/<emotion>
 ```
 Avilable `emotion` types are 
+
+- `auto`
 - `smile`
 - `anger`
 - `contempt`
@@ -18,8 +20,11 @@ Avilable `emotion` types are
 - `sadness`
 - `surprise`
 
+In `auto` emotion, the emotion which have the most probable value will be displayed automatically.
+
 ## Example
 
+- ![Auto](https://emotionbadge.onrender.com/emotion/arvidn/auto)
 - ![Smile](https://emotionbadge.onrender.com/emotion/JeroenMols/smile)
 - ![Fear](https://emotionbadge.onrender.com/emotion/JeroenMols/fear)
 - ![Neutral](https://emotionbadge.onrender.com/emotion/JeroenMols/neutral)
