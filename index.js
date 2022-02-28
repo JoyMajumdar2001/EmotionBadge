@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
   res.send("Hello World");
 });
 
-app.get("/emotion/:gitId/auto", function (req, res) {
+app.get("/em/:gitId/auto", function (req, res) {
   axios
     .get("https://api.github.com/users/" + req.params.gitId)
     .then(function (response) {
@@ -179,7 +179,7 @@ app.get("/emotion/:gitId/:emotion", function (req, res) {
   if (req.params.emotion == "auto") {
     axios
       .get(
-        "https://emotionbadge.onrender.com/emotion/" +
+        "https://emotionbadge.onrender.com/em/" +
           req.params.gitId +
           "/auto"
       )
